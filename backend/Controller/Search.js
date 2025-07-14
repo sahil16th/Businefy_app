@@ -1,4 +1,3 @@
-const { Message } = require('twilio/lib/twiml/MessagingResponse');
 const User = require('../MongoDB/model');
 
 const search = async (req, res) => {
