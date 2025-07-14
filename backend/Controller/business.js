@@ -1,6 +1,7 @@
 const User = require('../MongoDB/model');
 const axios = require('axios');
 const GROQ_URL = "https://api.groq.com/openai/v1/chat/completions";
+const GROQ_API_KEY = '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';
 
 const generateNames = async (req, res) => {
   const { prompt, selected } = req.body;
@@ -27,7 +28,7 @@ const generateNames = async (req, res) => {
       },
       {
         headers: {
-          "Authorization": `Bearer ${process.env.GROQ_API_KEY}`,
+          "Authorization": `Bearer ${GROQ_API_KEY}`,
           "Content-Type": "application/json"
         }
       }
