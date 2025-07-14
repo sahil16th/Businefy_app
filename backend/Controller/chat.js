@@ -1,4 +1,5 @@
 const axios = require('axios');
+const GROQ_API_KEY = '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';
 
 
 const chat = async (req, res) => {
@@ -12,7 +13,7 @@ const chat = async (req, res) => {
       },
       {
         headers: {
-          Authorization: `Bearer ${process.env.GROQ_API_KEY}`,
+          Authorization: `Bearer ${GROQ_API_KEY}`,
           "Content-Type": "application/json"
         }
       }
