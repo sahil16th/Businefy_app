@@ -1,0 +1,140 @@
+.createpost-container {
+  margin-left: 250px;
+  padding: 24px;
+  color: white;
+  border-radius: 12px;
+}
+
+.createpost-container {
+  display: flex;
+  justify-content: space-evenly;   /* Horizontal center */
+  min-height: 100vh;         /* Full height of the viewport */
+}
+
+.createpost-container2 {
+  /* background-color: white; */
+  /* padding: 30px; */
+  border-radius: 12px;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  max-width: 500px;
+  width: 100%;
+}
+
+
+.createpost-heading {
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.image-Upload-logo{
+  cursor: pointer;
+}
+
+.createpost-file{
+  display: none;
+}
+
+/* Form */
+.createpost-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  /* min-width: 300px; */
+}
+
+/* Input field */
+.createpost-input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  background-color: #1f1f1f;
+  color: white;
+}
+
+/* Textarea */
+.createpost-textarea {
+  padding: 12px;
+  border-radius: 18px;
+  border: none;
+  resize: vertical;
+  font-size: 16px;
+  background-color: #1f1f1f;
+  color: white;
+  height: 350px;
+  max-width: 700px;
+}
+
+/* File input */
+.createpost-file {
+  background-color: transparent;
+  color: white;
+}
+
+/* Submit button */
+.createpost-button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  max-width: 700px;
+}
+
+.createpost-button:hover {
+  background-color: #1d4ed8;
+}
+
+.create-post-explore {
+  margin-bottom: 20px;
+}
+
+.create-post-container{
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.post-upload-image{
+  display: flex;
+  flex-direction: row;
+}
+
+.post-upload-image img{
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .createpost-container {
+    margin: 10px 60px;
+    padding: 16px;
+  }
+
+  .createpost-form {
+    min-width: none;
+  }
+
+  .createpost-textarea{
+    height: 200px;
+  }
+}
+
+@media (max-width: 1224px) {
+  /* .createpost-form {
+    min-width: none;
+  } */
+
+  .create-post-container{
+    display: none;
+  }
+
+  .create-post-container {
+    display: none;
+  }
+}

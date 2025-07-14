@@ -1,0 +1,244 @@
+/* Import fonts and icons in index.html or globally in App */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+/* *,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  /* background-image: url("../Assets/background.jpeg"); */
+  background: blue;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-background {
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.login-shape {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.login-shape:first-child {
+  background: linear-gradient(#1845ad, #23a2f6);
+  left: -80px;
+  top: -80px;
+}
+
+.login-shape:last-child {
+  background: linear-gradient(to right, #ff512f, #f09819);
+  right: -30px;
+  bottom: -80px;
+}
+
+.login-form {
+  height: 520px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.13);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+  color: #ffffff;
+}
+
+.login-form h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.login-form input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.login-form input::placeholder {
+  color: #e5e5e5;
+}
+
+.login-blank{
+    height: 30px;
+}
+
+.login-form button {
+  margin-top: 10px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.login-social {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-social div {
+  width: 150px;
+  border-radius: 3px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.27);
+  color: #eaf0fb;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-social div:hover {
+  background-color: rgba(255, 255, 255, 0.47);
+}
+
+.login-fb {
+  margin-left: 25px;
+}
+
+.login-social i {
+  margin-right: 4px;
+}
+
+.login-signup{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.login-signup-button{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.login-signup-button:hover{
+    color: #6366f1;
+}
+
+.login-forget-password{
+    text-align: right;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.otp-form {
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.13);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+  color: #ffffff;
+}
+
+.otp-form h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.otp-form label {
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.otp-form input {
+  display: block;
+  height: 50px;
+  width: 95%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.otp-form input::placeholder {
+  color: #e5e5e5;
+}
+
+.otp-form button {
+  margin-top: 30px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+
+@media (max-width: 480px) {
+  .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0; /* FIXED */
+  }
+
+  .login-form, 
+  .otp-form {
+    width: 90%;        /* Responsive width */
+    margin: 0 0;     /* Center horizontally */
+    padding: 30px 20px; /* Slightly reduced padding */
+  }
+}
